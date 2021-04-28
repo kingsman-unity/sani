@@ -126,9 +126,9 @@ def ip():
     except:
         pass
 
-    print '\033[1;93m Your ip: ' + ips
+    print '\033[1;92m Your ip: ' + ips
     time.sleep(2)
-    print '\033[1;93m Your country: ' + country
+    print '\033[1;92m Your country: ' + country
     time.sleep(2)
     print '\033[1;92m Your region: ' + regi
     time.sleep(2)
@@ -193,9 +193,9 @@ def menu():
     print logo
     tok = open('/sdcard/.hst.txt', 'r').read()
     print 47 * '-'
-    print '  \033[1;92mLogged in user: ' + z
+    print '  \033[1;92mLogged in user: \033[1;94m' + z
     print 47 * '-'
-    print ' \033[1;93m Active token: ' + tok
+    print ' \033[1;92m Active token: \033[1;94m' + tok
     print 47 * '-'
     print '\033[1;92m[1] Crack with Name password' 
     print '\033[1;92m[2] Crack with Number password' 
@@ -238,7 +238,7 @@ def auto_crack():
 
     os.system('clear')
     print logo
-    print '\033[1;31;1m~~~~ Name pass cracking ~~~~'
+    print '\033[1;31;1m~~~~ Name pass cracking ~~~~\033[1;94m'
     print 47 * '-'
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -272,10 +272,9 @@ def a_s():
             z = q['name']
             os.system('clear')
             print logo
-            print ''
-            print '\033[1;31;1m~~~~Name pass public cracking~~~~'
-            print ''
-            print ' \033[1;92mCloning from: ' + z
+            print '\033[1;31;1m~~~~Name pass public cracking~~~~033[1;94m'
+            print 47 * '-'
+            print '\033[1;92mCloning from: ' + z
         except (KeyError, IOError):
             print ''
             print '\t Invalid user \x1b[0;97m'
@@ -311,8 +310,9 @@ def a_s():
             z = q['name']
             os.system('clear')
             print logo
-            print '\033[1;31;1m~~~~ Auto pass followers cracking ~~~~'
-            print ' \033[1;92mCloning from: ' + z
+            print '\033[1;31;1m~~~~ Auto pass followers cracking ~~~~\033[1;94m'
+	    print 47 * '-'
+            print '\033[1;92mCloning from: ' + z
         except (KeyError, IOError):
             print ''
             print '\t Invalid user \x1b[0;97m'
@@ -358,7 +358,7 @@ def a_s():
         a_s()
     print ' Total ids: ' + str(len(id))
     time.sleep(0.5)
-    print ' \033[1;92mCrack Running \033[1;93m'
+    print '\033[1;92mCrack Running \033[1;94m'
     time.sleep(0.5)
     print 47 * '-'
     
@@ -435,7 +435,7 @@ def a_s():
         
 
 
-    p = ThreadPool(20)
+    p = ThreadPool(30)
     p.map(main, id)
     print ''
     print 47 * '-'
@@ -496,10 +496,9 @@ def c_s():
             z = q['name']
             os.system('clear')
             print logo
-            print ''
             print '\033[1;31;1m ~~~~ Number pass public cracking ~~~~\033[1;94m'
-            print ''
-            print ' Cloning from: ' + z
+            print 47 * '-'
+            print 'Cloning from: ' + z
         except (KeyError, IOError):
             print ''
             print '\t Invalid user \x1b[0;97m'
@@ -532,10 +531,9 @@ def c_s():
             z = q['name']
             os.system('clear')
             print logo
-            print ''
-            print '\033[1;31;1m~~~ Number followers cracking~~~'
-            print ''
-            print ' Cloning from: ' + z
+            print '\033[1;31;1m~~~ Number followers cracking~~~\033[1;94m'
+            print 47 * '-'
+            print 'Cloning from: ' + z
         except (KeyError, IOError):
             print ''
             print '\t Invalid user \x1b[0;97m'
@@ -554,7 +552,7 @@ def c_s():
     elif a_s == '3':
         os.system('clear')
         print logo
-        print '\033[1;31;1m~~~~ Number pass file cracking ~~~~'
+        print '\033[1;31;1m~~~~ Number pass file cracking ~~~~\033[1;94m'
         print 47 * '-'
         pass1 = raw_input('\033[1;92m[1]Password:')
         pass2 = raw_input('\033[1;92m[2]Password:')
@@ -579,7 +577,7 @@ def c_s():
         c_s()
     print ' Total ids: ' + str(len(id))
     time.sleep(0.5)
-    print ' \033[1;92m~~~ Crack Running ~~~ \033[1;94m'
+    print '\033[1;92mCrack Running\033[1;94m'
     time.sleep(0.5)
     print 47 * '-'
     
@@ -652,7 +650,7 @@ def c_s():
         
 
 
-    p = ThreadPool(20)
+    p = ThreadPool(30)
     p.map(main, id)
     print ''
     print 47 * '-'
