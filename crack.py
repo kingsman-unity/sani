@@ -295,7 +295,7 @@ def a_s():
         print logo
         print 47 * '-'
         print '\033[1;31;1m~~~~ Name pass followers cracking ~~~~\033[1;94m'
-        print ''
+        print 47 * '-'
         print '\033[1;93m For example: 123,1234,12345,786\033[1;94m'
         print 47 * '-'
         p1 = raw_input('\033[1;92m[1]Name + digit:')
