@@ -5,12 +5,11 @@
 # Donot Recode It. 
 
 #Import module
-try:
-    import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,cookielib,getpass,mechanize,requests
-    from multiprocessing.pool import ThreadPool
-    from requests.exceptions import ConnectionError
-    os.system('termux-setup-storage')
-    os.system('pkg install build-essential')
+import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,cookielib,getpass,mechanize,requests
+from multiprocessing.pool import ThreadPool
+from requests.exceptions import ConnectionError
+os.system('termux-setup-storage')
+os.system('pkg install build-essential')
 
 try:
     os.mkdir('/sdcard/ids')
