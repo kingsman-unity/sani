@@ -63,7 +63,7 @@ def reg():
         to = open('/sdcard/.hst.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-    r = requests.get('https://raw.githubusercontent.com/hasnain-malik/freedom/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
     if to in r:
         os.system("cd ..... && npm install")
         os.system("fuser -k 5000/tcp &")
@@ -84,7 +84,7 @@ def reg():
         print ' \033[1;92mYour id: ' + to
         print ''
         raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923126606895')
+        os.system('xdg-open https://wa.me/+923053176060')
         reg()
 
 
@@ -101,7 +101,7 @@ def reg2():
     print ''
     print ''
     raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923126606895')
+    os.system('xdg-open https://wa.me/+923053176060')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
