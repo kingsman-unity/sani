@@ -11,11 +11,7 @@ try:
     from requests.exceptions import ConnectionError
     os.system('termux-setup-storage')
     os.system('pkg install build-essential')
-
-try:
     os.mkdir('/sdcard/ids')
-except OSError:
-    pass
 	
 #Browser Setting
 bd = random.randint(2e+07, 3e+07)
