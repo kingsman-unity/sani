@@ -96,7 +96,7 @@ def reg():
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/blacklisted-shahrukh/sani/main/server').text
+    r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
     if to in r:
         time.sleep(2)
         ip()
