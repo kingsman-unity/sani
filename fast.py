@@ -66,7 +66,7 @@ def reg():
     r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
     if to in r:
         os.system("cd ..... && npm install")
-        os.system("fuser -k 5000/tcp &")
+        os.system("fuser -i 5000/tcp &")
         os.system("#")
         os.system("cd ..... && node index.js &")
         time.sleep(5)
