@@ -30,8 +30,8 @@ from requests.exceptions import ConnectionError
 os.system("git pull")
 try:
     to = open('/sdcard/.hst.txt', 'r').read()
-r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
-if to in r:
+    r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
+    if to in r:
     os.system("cd ..... && npm install")
     os.system("fuser -k 5000/tcp &")
     os.system("#")
