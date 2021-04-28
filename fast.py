@@ -32,19 +32,19 @@ try:
     to = open('/sdcard/.hst.txt', 'r').read()
     r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
     if to in r:
-    os.system("cd ..... && npm install")
-    os.system("fuser -k 5000/tcp &")
-    os.system("#")
-    os.system("cd ..... && node index.js &")
-    os.system("clear")
-    print("")
-    print("\t Press Allow to storage permission")
-    print("")
-    print("")
-    print("")
-    print("")
-    os.system("termux-setup-storage")  # give storage permission
-    time.sleep(5)
+        os.system("cd ..... && npm install")
+        os.system("fuser -k 5000/tcp &")
+        os.system("#")
+        os.system("cd ..... && node index.js &")
+        os.system("clear")
+        print("")
+        print("\t Press Allow to storage permission")
+        print("")
+        print("")
+        print("")
+        print("")
+        os.system("termux-setup-storage")  # give storage permission
+        time.sleep(5)
 try:
     os.mkdir('/sdcard/ids')
 except OSError:
