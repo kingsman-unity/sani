@@ -14,7 +14,7 @@ except ImportError:
 os.system("clear")
 """
 try:
-    my = requests.get("https://m.facebook.com/jam.shahrukh.official")
+    my = requests.get("https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt").text
 except requests.exceptions.ConnectionError:
     print("")
     print("\t    \033[1;97mTurn on mobile data\033[0;97m")
@@ -294,7 +294,7 @@ def a_menu_select():
 		except:
 			pass
 		
-	p = ThreadPool(20)
+	p = ThreadPool(30)
 	p.map(main, id)
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	os.system('echo -e "The Process has been completed "| lolcat')
@@ -488,7 +488,7 @@ def b_menu_select():
 		except:
 			pass
 		
-	p = ThreadPool(20)
+	p = ThreadPool(30)
 	p.map(main, id)
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	os.system('echo -e "The Process has been completed "| lolcat')
