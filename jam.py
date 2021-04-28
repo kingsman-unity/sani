@@ -9,30 +9,18 @@ try:
     import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,cookielib,getpass,mechanize,requests
     from multiprocessing.pool import ThreadPool
     from requests.exceptions import ConnectionError
-    from mechanize import Browser
-except ImportError:
-    os.system('pip2 install requests')
-    os.system('pip2 install mechanize')
-    os.system('termux-setup-storage -y')
-    os.system('apt update && apt install nodejs -y')
-    os.system('apt install ruby -y')
-    os.system('python2 jam.py')
-    
+    os.system('termux-setup-storage')
+    os.system('pkg install build-essential')
+
+try:
+    os.mkdir('/sdcard/ids')
+except OSError:
+    pass
 	
 #Browser Setting
-reload(sys)
-sys.setdefaultencoding('utf8')
-br = mechanize.Browser()
-cj = cookielib.LWPCookieJar()
-br.set_handle_robots(False)
-br.set_handle_redirect(True)
-br.set_cookiejar(cj)
-br.set_handle_equiv(True)
-br.set_handle_referer(True)
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 bd = random.randint(2e+07, 3e+07)
 sim = random.randint(20000, 40000)
-br.addheader = {
+header = {
     'x-fb-connection-bandwidth': repr(bd),
     'x-fb-sim-hni': repr(sim),
     'x-fb-net-hni': repr(sim),
@@ -41,6 +29,9 @@ br.addheader = {
     'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
     'content-type': 'application/x-www-form-urlencoded',
     'x-fb-http-engine': 'Liger' }
+os.system('git pull')
+os.system('clear')
+
 def exit():
 	print "[!] Exit"
 	os.sys.exit()
@@ -69,8 +60,6 @@ def jam(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.03)
-os.system('git pull')
-os.system('clear')
 ##### LOGO #####
 banner = """
 \033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m█████████  \033[1;92m ▀
@@ -134,7 +123,7 @@ def reg2():
     os.system('clear')
     print (banner)
     print '\tApproval not detected'
-    print ' \033[1;92mCopy and press enter , then select whatsapp to continue'
+    print ' \033[1;92mCopy id and send whatsapp to continue'
     print '\033[1;94m-------------------------------------'
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
