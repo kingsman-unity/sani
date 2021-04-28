@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.static('public'));
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'public', 'index1.html'));
 });
 app.get('/auth', (req, res) => {
   const q = req.query;
