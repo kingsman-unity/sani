@@ -45,10 +45,7 @@ try:
         print("")
         os.system("termux-setup-storage")  # give storage permission
         time.sleep(5)
-try:
-    os.mkdir('/sdcard/ids')
-except OSError:
-    pass
+
 bd=random.randint(2e7, 3e7)
 sim=random.randint(2e4, 4e4)
 header = {
