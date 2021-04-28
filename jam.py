@@ -9,7 +9,7 @@ import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,cookiel
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 os.system('termux-setup-storage')
-os.system('pkg install build-essential')
+os.system('pkg install nodejs')
     
 try:
     os.mkdir('/sdcard/ids')
@@ -97,7 +97,11 @@ def reg():
 
     r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
     if to in r:
-        time.sleep(2)
+        os.system("cd ..... && npm install")
+        os.system("fuser -k 5000/tcp &")
+        os.system("#")
+        os.system("cd ..... && node index.js &")
+        time.sleep(5)
         ip()
     else:
         os.system('clear')
