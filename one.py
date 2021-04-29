@@ -100,12 +100,12 @@ def menu():
     global token
     os.system("clear")
     logo()
-try:
+    try:
         token = open("login.txt","r").read()
     except (KeyError , IOError):
         os.system("clear")
 	os.system("python2 jam.py")
-try:
+    try:
         r = requests.get("https://graph.facebook.com/me?access_token="+token)
         q = json.loads(r.text)
         nm = q["name"]
