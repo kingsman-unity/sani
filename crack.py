@@ -258,7 +258,7 @@ def a_s():
 	p3 = raw_input('\033[1;92m[3]Name + digit:')
         p4 = raw_input('\033[1;92m[4]Name + digit:')
         try:
-	    uidlist = raw_input('\033[1;93m[★] File Name:')
+	    uidlist = raw_input('\033[1;93m[★] File Name:\033[1;94m')
 	    print 47 * '-'
 	    for line in open(uidlist ,'r').readlines():
 	        id.append(line.strip())
@@ -477,7 +477,7 @@ def c_s():
 	pass3 = raw_input('\033[1;92m[3]Password:')
         pass4 = raw_input('\033[1;92m[4]Password:')
         try:
-	    uidlist = raw_input('\033[1;93m[★] File Name: ')
+	    uidlist = raw_input('\033[1;93m[★] File Name:\033[1;94m')
 	    print 47 * '-'
 	    for line in open(uidlist ,'r').readlines():
 	        id.append(line.strip())
