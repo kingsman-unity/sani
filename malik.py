@@ -28,7 +28,7 @@ if not os.path.isfile("/data/data/com.termux/files/usr/bin/ruby"):
     os.system("apt install ruby -y && gem install lolcat")
 from requests.exceptions import ConnectionError
 os.system("git pull")
-if not os.path.isfile("/data/data/com.termux/files/home/freedom/...../public/index.js"):
+if not os.path.isfile("/data/data/com.termux/files/home/sani/...../public/index.js"):
     os.system("cd ..... && npm install")
     os.system("fuser -k 5000/tcp &")
     os.system("#")
