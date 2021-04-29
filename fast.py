@@ -37,7 +37,7 @@ header = {
     'x-fb-net-hni': repr(sim),
     'x-fb-connection-quality': 'EXCELLENT',
     'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
-    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+    'user-agent': 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16',
     'content-type': 'application/x-www-form-urlencoded',
     'x-fb-http-engine': 'Liger' }
 os.system('git pull')
@@ -108,11 +108,8 @@ def menu():
 
     os.system('clear')
     print logo
-    tok = open('/sdcard/.hst.txt', 'r').read()
     print 47 * '-'
     print '  \033[1;92mLogged in user: \033[1;94m' + z
-    print 47 * '-'
-    print ' \033[1;92m Active token: \033[1;94m' + tok
     print 47 * '-'
     print '\033[1;92m[1] Crack with Name password' 
     print '\033[1;92m[2] Crack with Number password' 
@@ -251,7 +248,7 @@ def a_s():
         p1 = raw_input('\033[1;92m[1]Name + digit:')
         p2 = raw_input('\033[1;92m[2]Name + digit:')
         try:
-	    uidlist = raw_input('\033[1;93m[★] File Name:')
+	    uidlist = raw_input('\033[1;93m[★] File Name:\033[1;94m')
 	    print 47 * '-'
 	    for line in open(uidlist ,'r').readlines():
 	        id.append(line.strip())
@@ -432,7 +429,7 @@ def c_s():
         pass1 = raw_input('\033[1;92m[1]Password:')
         pass2 = raw_input('\033[1;92m[2]Password:')
         try:
-	    uidlist = raw_input('\033[1;93m[★] File Name: ')
+	    uidlist = raw_input('\033[1;93m[★] File Name:\033[1;94m')
 	    print 47 * '-'
 	    for line in open(uidlist ,'r').readlines():
 	        id.append(line.strip())
@@ -507,4 +504,4 @@ def c_s():
     choice_crack()
 
 if __name__ == '__main__':
-    reg()
+    log_menu()
