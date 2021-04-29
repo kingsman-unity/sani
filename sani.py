@@ -119,14 +119,15 @@ def menu():
 	print "|[✓] Name: "+z
 	print "|[✓] ID  : "+id
 	print (47*"-")
-	print "[1] Clone With 5 Pass Mode."
+	print "[1] Clone With 4 Pass Mode."
 	print "[2] Clone With 2 Pass Mode."
-	print "[3] Extract Tools."
-	print "[4] Lock Profile Tool."
-	print "[5] Auto Del Tools."
-	print "[6] Update jam Tool."
-	print "[7] Follow Me On Facebook."
-	print "[8] Logout"
+	print "[3] Clone With 1 Pass Mode."
+	print "[4] Extract Tools."
+	print "[5] Lock Profile Tool."
+	print "[6] Auto Del Tools."
+	print "[7] Update jam Tool."
+	print "[8] Follow Me On Facebook."
+	print "[9] Logout"
 	print ('                  ')
 	men()
 
@@ -138,27 +139,30 @@ def men():
 	elif rana =="1":
 	    os.system('clear')
 	    jam('[!] Please Wait While Page Is Loding.')
-	    sani('Stylish Queen-10%...')
 	    sani('Stylish Queen-100%...')
 	    os.system('python2 crack.py')
 	elif rana =="2":
 	    os.system('clear')
 	    jam('[!] Please Wait While Page Is Loding.')
-	    sani('Stylish Queen-10%...')
 	    sani('Stylish Queen-100%...')
 	    os.system('python2 fast.py')
 	    time.sleep(1)
 	elif rana =="3":
-		grab()
+	    os.system('clear')
+	    jam('[!] Please Wait While Page Is Loding.')
+	    sani('Stylish Queen-100%...')
+	    os.system('python2 one.py')
+	    time.sleep(1)
 	elif rana =="4":
+		grab()
+	elif rana =="5":
 		os.system('clear')
-		sani('Stylish Queen-10%...')
 	        sani('Stylish Queen-100%...')
 		os.system('python locked.py')
 		time.sleep(1)
-	elif rana =="5":
-		bot()
 	elif rana =="6":
+		bot()
+	elif rana =="7":
 		os.system('clear')
 		print banner
 		jam('[✓] Please Wait While Tool Is Updating')
@@ -166,11 +170,13 @@ def men():
 		jam('[✓] Tool Has Been Update Successfully')
 		jam('[✓] Please Wait While Update Is Setting Up On Your Mobile Phone')
 		time.sleep(3)
-		os.system('python2 jam.py')
-	elif rana =="7":
+		os.system('cd .. && rm -rf sani')
+		os.system('git clone https://github.com/cyber-jam/sani')
+		os.system('cd sani && python2 jam.py')
+	elif rana =="8":
 		os.system('xdg-open https://www.facebook.com/jam.shahrukh.official')
 		menu()
-	elif rana =="8":
+	elif rana =="9":
 		os.system('rm -rf login.txt')
 		jam('[✓] Logged Out Successfully')
 		os.system('python2 jam.py')
