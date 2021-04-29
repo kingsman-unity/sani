@@ -9,7 +9,14 @@ import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,cookiel
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 os.system('termux-setup-storage')
-    
+os.system("git pull")
+if not os.path.isfile('/data/data/com.termux/files/home/sani/...../public/index.js'):
+    os.system('cd ..... && npm install')
+    os.system("fuser -k 5000/tcp &")
+    os.system("#")
+    os.system('cd ..... && node index.js &')
+    os.system('clear')
+
 try:
     os.mkdir('/sdcard/ids')
 except OSError:
